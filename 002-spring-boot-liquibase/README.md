@@ -12,7 +12,7 @@
  * 访问：https://start.spring.io/
  * Project 选择 Maven
  * Language 选择 Java
- * Spring Boot 选择 3.0.5
+ * Spring Boot 选择 2.7.10
   
 #### 4.修改 pom.xml
 ```xml
