@@ -68,8 +68,8 @@ insert into t_user(ID,NAME,LASTNAME) values(-1,'Victor','lastname');
 ```
 
 #### 7.开启扫描与自动执行脚本
-  + 开启 Spring Data JDBC 扫描
-  + 自动执行 SQL 脚本
+  + 开启 Spring Data JDBC 扫描，添加 `@EnableJdbcRepositories`
+  + 自动执行 SQL 脚本，创建 `DataSourceInitializer` bean
   
   最后代码如下：
 ```java
@@ -146,5 +146,11 @@ Page<User> findByLastname(String lastname, Pageable pageable);
 List<User> findByAnnotation(String lastname);
 ```
 
-#### 9.参考
+#### 9.测试用例
+ 
+[UserRepositoryTest.java](https://github.com/Peng-star-star/spring-study/blob/main/005-spring-boot-data-jdbc/src/test/java/com/example/demo/repository/UserRepositoryTest.java)
+
+[UserPagingRepositoryTest.java](https://github.com/Peng-star-star/spring-study/blob/main/005-spring-boot-data-jdbc/src/test/java/com/example/demo/repository/UserPagingRepositoryTest.java)
+
+#### 10.参考
  [官网 - Spring Data JDBC - Reference Documentation](https://docs.spring.io/spring-data/jdbc/docs/2.4.11/reference/html)
