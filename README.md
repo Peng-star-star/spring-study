@@ -8,3 +8,4 @@
 | [004-project-liquibase](https://github.com/Peng-star-star/spring-study/blob/main/004-project-liquibase.md)  | 项目案例-使用 Liquibase 实现数据库更新功能 |
 | [005-spring-boot-data-jdbc](https://github.com/Peng-star-star/spring-study/blob/main/005-spring-boot-data-jdbc)  | Spring Boot 集成 Spring Data JDBC，与基本使用 |
 | [006-spring-boot-mybatis](https://github.com/Peng-star-star/spring-study/tree/main/006-spring-boot-mybatis)  | Spring Boot 集成 MyBatis，使用注解查询与XML查询 |
+| [007-spring-boot-jpa](https://github.com/Peng-star-star/spring-study/tree/main/007-spring-boot-jpa)  | Spring Boot 集成 Spring Data JPA，并实现简单查询 |
