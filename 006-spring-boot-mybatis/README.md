@@ -75,7 +75,26 @@ create table city (id int primary key auto_increment, name varchar, state varcha
 insert into city (name, state, country) values ('San Francisco', 'CA', 'US');
 ```
 
-#### 7.创建 CityMapper.class
+#### 7.创建 City.class
+
+* 创建文件 `com.example.demo.domain.City`
+
+```java
+package com.example.demo.domain;
+
+import lombok.Data;
+
+@Data
+public class City {
+
+    private Long id;
+    private String name;
+    private String state;
+    private String country;
+}
+```
+
+#### 8.创建 CityMapper.class
 
 
 * 使用注解查询，编写以下代码
@@ -92,7 +111,7 @@ City selectCityById(@Param("id") int id);
 ```
 
 
-#### 8.编写 XML 文件
+#### 9.编写 XML 文件
 
 * 创建文件夹 `src/main/resources/mapper`
 
@@ -112,7 +131,7 @@ City selectCityById(@Param("id") int id);
 
 Spring Boot 集成 MyBatis 已完成，下面编写测试用例来进行查询
 
-#### 9.测试用例
+#### 10.测试用例
 
 * 创建包名 `com.example.demo.mapper`
 * 创建文件 `com.example.demo.mapper.CityMapperTest`
@@ -140,6 +159,6 @@ public class CityMapperTest {
 
 以上代码可以在可以在 [GitHub仓库](https://github.com/Peng-star-star/spring-study/tree/main/006-spring-boot-mybatis) 找到
 
-#### 10.参考
+#### 11.参考
 
 [官网代码库 - MyBatis-Spring-Boot-Starter 简介](https://github.com/mybatis/spring-boot-starter/blob/master/mybatis-spring-boot-autoconfigure/src/site/zh/markdown/index.md)
